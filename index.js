@@ -2,7 +2,7 @@ var express = require('express');
 var app = new express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-var port = process.env.PORT || 5555;
+var port = 5555;
 
 app.use('/public', express.static('./public'));
 
